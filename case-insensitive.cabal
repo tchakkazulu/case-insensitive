@@ -1,0 +1,22 @@
+Name:                case-insensitive
+Version:             0.2
+Synopsis:            Utility functions for using case-insensitive filepaths.
+Description:         This library provides utility functions for working with
+                     case-insensitive FilePaths. In many cases, you won't need
+                     this, and its use as "convenience" library is not
+                     recommended. However, if you need to read files that
+                     originate on a case-insensitive platform while working
+                     on a case-insensitive platform, this library can be of
+                     some use.
+License:             BSD3
+License-file:        LICENSE
+Author:              Joeri van Eekelen
+Maintainer:          j.v.eekelen@gmail.com
+Category:            System
+Build-type:          Simple
+Cabal-version:       >=1.2
+
+Library
+  Exposed-modules:     System.IO.CaseInsensitive
+  Build-depends:       filepath, directory, base
+
